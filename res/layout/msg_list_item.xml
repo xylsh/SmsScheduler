@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemSwipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <!-- Bottom View Start -->
+   <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#FF6600"
+        
+        android:orientation="horizontal"
+        android:weightSum="1" >
+
+        <com.beardedhen.androidbootstrap.FontAwesomeText
+            android:id="@+id/delMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            
+            android:textSize="32sp"
+            fontawesometext:fa_icon="fa-times-circle" />
+
+    </LinearLayout>
+    <!-- Bottom View End -->
+
+
+    <!-- Surface View Start -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                
+                android:textSize="16sp"
+                android:text="Tel: 18200376985" />
+
+            <TextView
+                android:id="@+id/msgContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/phoneNumber"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                
+                android:textSize="16sp"
+                android:text="Content: 世上女人很多，男人说值得爱的女人不止一个；世上男人不计其数，女人却说，值得爱的男人只有一个。" />
+
+            <TextView
+                android:id="@+id/msgTime"
+                android:layout_below="@id/msgContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                
+                android:textSize="16sp"
+                android:text="Time: 2014-09-01 19:32" />
+            
+            
+            <!-- 作为每个item最下边的元素，layout_marginBottom似乎不起作用，所以
+                                                   额外设置了paddingBottom -->
+            <TextView
+                android:id="@+id/msgStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/msgTime"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingBottom="8dp"
+                
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Status: 已发送" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+    <!-- Surface View End -->
+
+</com.daimajia.swipe.SwipeLayout>

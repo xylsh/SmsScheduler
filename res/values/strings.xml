@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">定时短信助手</string>
+    <string name="main_activity_name">定时短信助手 v1.2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_button">添加定时短信</string>
+    <string name="view_button">查看定时短信</string>
+    <string name="title_activity_add_msg">添加短信</string>
+    <string name="add_peple_hint">短信要发给谁?</string>
+    <string name="add_msg_hint">短信要说什么?</string>
+    <string name="title_activity_view_all">查看定时短信</string>
+    <string name="time_demo_text">2014-09-01\n19:30</string>
+    <string name="set_date_button">设置日期</string>
+    <string name="set_time_button">设置时间</string>
+    <string name="title_activity_sample">SampleActivity</string>
+
+</resources>

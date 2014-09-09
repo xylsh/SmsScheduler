@@ -1,0 +1,46 @@
+<RelativeLayout 
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.test.MainActivity" >
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        
+        android:layout_marginTop="50dp"
+        android:text="@string/add_button"
+        
+        bootstrapbutton:bb_roundedCorners="true"
+        bootstrapbutton:bb_size="large"
+        bootstrapbutton:bb_type="primary" />
+    
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/viewButton"
+        android:layout_below="@id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        
+        android:layout_marginTop="50dp"
+        android:text="@string/view_button"
+        
+        bootstrapbutton:bb_roundedCorners="true"
+        bootstrapbutton:bb_size="large"
+        bootstrapbutton:bb_type="primary" />
+
+    
+
+</RelativeLayout>
